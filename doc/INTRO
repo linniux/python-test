@@ -8,5 +8,38 @@ TCP 是一个可靠的协议。为了防止数据在传输过程中被破坏，每个信息包都包含一个校验码
 UDP的优点是，它对连接没有什么概念，不存在花费时间建立和关闭连接的问题。
 它只传送很小一部分数据。UDP的限制是一个信息包不超过64KB的数据，通常UDP传送1KB一下的数据。
 
+socket 是操作系统中I/O系统延伸的一部分。它可以使进程和机器之间的通信成为可能。在某些方面，socket可以被看成一个标准的文件描述符。很多时候，程序不知道它正把数据写入一个文件，终端
+还是一个TCP连接。
+
+利用socket通信，python 提供了两种方法，socket对象和文件类对象。
+
 python 提供了访问底层操作系统Socket接口的全部方法。
 http://blog.csdn.net/hguisu/article/details/7445768
+
+
+
+https://github.com/xiaomi-sa/
+
+https://github.com/joe011
+
+https://github.com/mrjoes/tornadio2
+
+https://github.com/cherrypy/cherrypy
+
+https://ws4py.readthedocs.org/en/latest/
+
+http://tools.ietf.org/html/rfc6455
+
+https://github.com/Lawouach
+
+
+
+熟悉以下任意两款以上软件的安装、配置和使用：
+Postfix and Doveco
+Redmine;
+Jenkins or Hudson
+Archiva or Nexue
+Subversion or Git
+Bugzilla
+Freeswitch
+任意一款开源Wiki软件

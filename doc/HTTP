@@ -1,0 +1,14 @@
+HTTP CODE
+
+301 Moved Permanently  “永久转移”
+302 Moved Temporarily  “临时转移”
+
+生产环境中，要使用301重定向，不要使用302跳转。302 容易被搜索引擎视为SPAM,301不会。
+
+JS控制的跳转，它的缺点也很明显，搜索spider不会执行JS。
+
+nginx中对跳转的配置示例：
+if ($host != 'www.x.com') {
+rewrite ^/(.*) http://www.x.com/$1 permanet;  #301
+#rewrite ^/(.*) http://www.x.com/$1 redrect;  #302
+}

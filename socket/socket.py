@@ -5,8 +5,7 @@
 import socket
 import sys
 # 
-# 
-# 
+#  
 # 
 # 
 # port = 70
@@ -34,7 +33,13 @@ import sys
 host = ''
 port = 10080
 
-s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+try:
+    s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+except socket.error,e:
+    print "Strange error creating socket: %s" % e
+    sys.exit()
+    
+    
 s.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
 s.bind((host,port))
 s.listen(1)
