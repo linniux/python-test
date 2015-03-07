@@ -52,7 +52,8 @@ while True:
     clientfile.write("Welcome," + str(clientaddr) + "\n")
     clientfile.write("Please enter a string: ")
     line = clientfile.readline().strip()
-    clientfile.write("You entered %d characters.\n" % len(line))
+    clientfile.wr \
+    ite("You entered %d characters.\n" % len(line))
     clientfile.write("Love you,sir")
     clientfile.close()
     clientsock.close()
